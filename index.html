@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="id">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CBT SMAN 40</title>
+
+    <style>
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+            font-family: "Segoe UI", sans-serif;
+        }
+
+        body {
+            background: #007bff;
+            color: #333;
+        }
+
+        /* ================= LOGIN ================= */
+
+        #loginPage {
+            display: flex;
+            height: 100vh;
+        }
+
+        .image-side {
+            flex: 1;
+            background-image: url("1788625364558.png");
+            background-size: cover;
+            background-position: center;
+            position: relative;
+        }
+
+        .image-side::before {
+            content: "";
+            position: absolute;
+            inset: 0;
+            background: rgba(0, 0, 0, .25);
+        }
+
+        .form-side {
+            flex: 1;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background: #007bff;
+            padding: 40px;
+        }
+
+        .login-box {
+            width: 100%;
+            max-width: 400px;
+            background: white;
+            padding: 35px;
+            border-radius: 15px;
+            box-shadow: 0 8px 25px rgba(0, 0, 0, .2);
+        }
+
+        .login-box h2 {
+            font-size: 30px;
+            margin-bottom: 10px;
+            color: #007bff;
+        }
+
+        .login-box p {
+            color: #777;
+            margin-bottom: 30px;
+        }
+
+        .input-group {
+            margin-bottom: 20px;
+        }
+
+        .input-group label {
+            display: block;
+            margin-bottom: 8px;
+            font-weight: 600;
+        }
+
+        .input-group input {
+            width: 100%;
+            padding: 13px 15px;
+            border: 1px solid #ccc;
+            border-radius: 8px;
+            font-size: 16px;
+        }
+
+        .input-group input:focus {
+            outline: none;
+            border-color: #007bff;
+        }
+
+        .login-btn {
+            width: 100%;
+            padding: 14px;
+            background: #007bff;
+            color: white;
+            border: none;
+            border-radius: 8px;
+            font-size: 16px;
+            font-weight: bold;
+            cursor: pointer;
+        }
+
+        .login-btn:hover {
+            background: #0056b3;
+        }
+
+        .error {
+            color: red;
+            margin-top: 15px;
+            text-align: center;
+            display: none;
+        }
+
+        /* ================= DASHBOARD ================= */
+
+        #dashboardPage {
+            display: none;
+            min-height: 100vh;
+            background: #007bff;
+        }
+
+        .navbar {
+            background: #0056b3;
+            color: white;
+            padding: 18px 
